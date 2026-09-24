@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt — Vesper</title>
+  <meta name="description" content="Napište kanceláři Vesper. Pařížská 7, Praha 1.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+  <header class="site-header"><nav class="nav" aria-label="Hlavní">
+    <a class="logo" href="./index.html">Vesper <span>Praha</span></a>
+    <ul class="nav-links">
+      <li><a href="./sluzby.html">Služby</a></li>
+      <li><a href="./pristup.html">Přístup</a></li>
+      <li><a href="./o-nas.html">Kancelář</a></li>
+      <li><a href="./tym.html">Tým</a></li>
+      <li><a href="./kontakt.html" aria-current="page">Kontakt</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Přepnout režim">◐</button>
+      <a class="btn" href="./kontakt.html">Konzultace</a>
+      <button class="menu-btn" type="button" data-menu aria-expanded="false">☰</button>
+    </div>
+  </nav></header>
+  <div class="mobile-panel" data-panel>
+    <a href="./sluzby.html">Služby</a><a href="./pristup.html">Přístup</a><a href="./o-nas.html">Kancelář</a><a href="./tym.html">Tým</a><a href="./kontakt.html">Kontakt</a>
+  </div>
+  <main id="obsah">
+    <header class="page-hero"><div class="wrap"><p class="eyebrow reveal">Kontakt</p><h1 class="reveal reveal-d1">Napište věc, ne román.</h1><p class="lead reveal reveal-d2">Ozveme se do jednoho pracovního dne.</p></div></header>
+    <section><div class="wrap split">
+      <form data-consult-form class="js-reveal" novalidate>
+        <label>Jméno <input name="name" type="text" autocomplete="name" required></label>
+        <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+        <label>Telefon <input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Téma <select name="topic"><option>Korporátní právo</option><option>Soudní spor</option><option>Nemovitosti</option><option>Soukromý majetek</option><option>Jiné</option></select></label>
+        <label>Stručný popis <textarea name="message" required placeholder="Co je potřeba rozhodnout?"></textarea></label>
+        <label class="check"><input name="gdpr" type="checkbox" required><span>Souhlasím se zpracováním údajů za účelem odpovědi. Podrobnosti v <a href="./ochrana-osobnich-udaju.html">zásadách</a>.</span></label>
+        <button class="btn btn-solid" type="submit">Odeslat zprávu</button>
+        <p class="form-status" data-form-status role="status"></p>
+        <p class="form-note">Ukázkový formulář neodesílá data na server.</p>
+      </form>
+      <div class="js-reveal">
+        <p class="kicker">Kancelář</p>
+        <h2>Pařížská 7<br>110 00 Praha 1</h2>
+        <p class="muted">Po—Pá 9.00–18.00<br>Schůzky jen po dohodě.</p>
+        <p><a href="tel:+420222111800">+420 222 111 800</a><br><a href="mailto:kancelar@vesper.legal">kancelar@vesper.legal</a></p>
+        <p class="muted">Vesper Advokátní kancelář s.r.o.<br>IČO 00000000</p>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap legal-row"><span>© <span data-year>2026</span> Vesper. Fiktivní ukázkový web.</span></div></footer>
+  <script src="./js/app.js" defer></script>
+</body></html>
